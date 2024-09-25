@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "artistly-f46e4"
+  },
+  "targets": {
+    "artistly-f46e4": {
+      "hosting": {
+        "artistly-client": [
+          "artistly-f46e4"
+        ],
+        "artistly-admin": [
+          "artistly-admin"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
