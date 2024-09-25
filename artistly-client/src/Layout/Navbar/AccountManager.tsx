@@ -17,8 +17,6 @@ const AccountManager = () => {
 
   const [isHovered, setIsHovered] = useState(false);
 
-  // const uId = currentUser?.uid;
-
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -114,48 +112,7 @@ const AccountManager = () => {
                       <span>Profilul Meu</span>
                     </Link>
                   </li>
-                  <li className="my-1.5 text-center">
-                    {/* <form
-                      action={
-                        import.meta.env.VITE_API_LOCAL_URL +
-                        `checkout/create-${
-                          role === 409 || role === 989 ? "portal" : "checkout"
-                        }-session`
-                      }
-                      method="POST"
-                    >
-                      <input type="hidden" name="uId" value={uId} />
-                      <button className="text-[#510087] hover:font-semibold inline-flex items-center account-menu-action">
-                        <svg
-                          className="me-[5px]"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="9"
-                          height="9"
-                          viewBox="0 0 9 9"
-                          fill="none"
-                        >
-                          <circle cx="4.5" cy="4.5" r="4.5" fill="#FFFFF" />
-                        </svg>
-                        <span>Abonament</span>
-                      </button>
-                    </form> */}
-                    <button
-                      className="text-[#510087] hover:font-semibold inline-flex items-center account-menu-action cursor-not-allowed"
-                      disabled={true}
-                    >
-                      <svg
-                        className="me-[5px]"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="9"
-                        height="9"
-                        viewBox="0 0 9 9"
-                        fill="none"
-                      >
-                        <circle cx="4.5" cy="4.5" r="4.5" fill="#FFFFF" />
-                      </svg>
-                      <span>Abonament</span>
-                    </button>
-                  </li>
+
                   <li
                     className="my-1 text-center text-[#c10000] hover:font-semibold "
                     onClick={handleConfirmLogout}

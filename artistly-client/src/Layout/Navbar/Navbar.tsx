@@ -65,9 +65,6 @@ const Navbar = () => {
 
   const handleToggleSearch = () => setShowSearch(!showSearch);
 
-  // const wishlistCount =
-  //   JSON.parse(localStorage.getItem("wishlist")!).length || 0;
-
   return (
     <>
       {role !== 333 && !scrolled && (
