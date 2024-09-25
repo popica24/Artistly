@@ -1,0 +1,139 @@
+.searchbar-result > span {
+  border-bottom: 2px solid white;
+}
+.searchbar-result > span:hover {
+  border-bottom: 2px solid #354f52;
+}
+.mobile-active-navlink {
+  background: #354f52;
+  color: white;
+}
+.mobile-active-navlink > svg * {
+  fill: white;
+}
+.account-wrapper:hover > span {
+  color: white;
+}
+.account-wrapper:hover > svg > * {
+  fill: white;
+}
+.subcategory-link:hover > .subcategory-bullet {
+  background: #354f52;
+}
+.subcategory-link:hover > span {
+  font-weight: 500;
+}
+.text-footer {
+  color: var(--Text-Footer, #112a46);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.dropdown-header > span {
+  color: var(--Text-Footer, #112a46);
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: start;
+}
+.dropdown-menu > ul > li {
+  color: var(--Text-Footer, #112a46);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: start;
+  padding-top: 0.5rem;
+}
+.footer-border {
+  border-top: 2px solid rgba(17, 42, 70, 0.31);
+}
+
+.bubble-margin-md {
+  margin-right: 2%;
+}
+.subcategory-font {
+  border-bottom: 2px solid transparent;
+}
+.subcategory-button:hover .subcategory-font {
+  animation: categoryNameHover 0.3s linear forwards;
+}
+
+.account-menu-list > li {
+  cursor: pointer;
+}
+.account-menu-list > li:hover {
+  cursor: pointer;
+}
+.account-menu-action:hover > svg {
+  fill: #354f52;
+}
+.footer-wrapper {
+  padding-top: 4.5rem;
+  padding-bottom: 1rem;
+}
+.footer-hero > div > p {
+  color: var(--Text-Footer, #112a46);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0.2rem 0rem;
+}
+
+.article-wrapper {
+  color: var(--Text-Footer, #112a46);
+  font-family: "Inter";
+  font-style: normal;
+  line-height: normal;
+}
+.article-header {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+article > a {
+  font-size: 0.8rem;
+  padding: 0.1rem 0rem;
+  font-weight: 400;
+}
+article > a:hover {
+  color: var(--Link, #07c);
+  cursor: pointer;
+}
+
+@keyframes categoryNameHover {
+  0% {
+    border-bottom: 2px solid transparent;
+  }
+  100% {
+    border-bottom: 2px solid #510087;
+  }
+}
+@media all and (max-width: 1120px) {
+  .footer-wrapper {
+    padding-top: 1rem;
+  }
+  .footer-border {
+    margin-top: 2rem;
+    width: calc(
+      100% - 3.24rem
+    ); /* 1.62rem left + 1.62rem right = 3.24rem total padding */
+    padding: 0 1.62rem; /* 1.62rem padding on the left and right */
+  }
+  .footer-wrapper {
+    margin-bottom: 74.11px;
+    border-bottom: 0;
+  }
+  .text-footer {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DB_CONNECTION_STRING": "User ID=postgres;Password=popicagamer2193A_;Server=localhost;Port=5432;Database=ArtistlyDevelopment-Testing;Pooling=true;",
+        "ALLOWED_ORIGINS": "http://artistly.ro",
+        "JWT_VALID_ISSUER": "https://securetoken.google.com/artistly-f46e4",
+        "JWT_VALID_AUDIENCE": "artistly-f46e4",
+        "REDIS_CONNECTION": "localhost:6379",
+        "DOMAIN": "http://localhost:8080",
+        "ADMIN_DOMAIN": "http://localhost:5173"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5025"
+    },
+    "https": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+         "DOMAIN": "http://localhost:8080",
+        "ADMIN_DOMAIN": "http://localhost:5173",
+        "DB_CONNECTION_STRING": "User ID=postgres;Password=popicagamer2193A_;Server=localhost;Port=5432;Database=ArtistlyDevelopment-Testing;Pooling=true;",
+        "JWT_VALID_ISSUER": "https://securetoken.google.com/artistly-f46e4",
+        "JWT_VALID_AUDIENCE": "artistly-f46e4",
+        "REDIS_CONNECTION": "localhost:6379"
+
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7163;http://localhost:5025"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_HTTPS_PORTS": "8081",
+        "ASPNETCORE_HTTP_PORTS": "8080"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:33041",
+      "sslPort": 44369
+    }
+  }
+}

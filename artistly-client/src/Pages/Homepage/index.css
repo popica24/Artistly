@@ -1,0 +1,156 @@
+.topfive-container:nth-child(2),
+.topfive-container:nth-child(3),
+.topfive-container:nth-child(4) {
+  border-left: 1px solid #8e8e8e;
+}
+.top-five-header {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.category-bg-overlay {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.category-bg-overlay:hover {
+  opacity: 0;
+}
+.toplocation-banner {
+  background-image: url("https://s3-alpha-sig.figma.com/img/21a2/559d/4c0e3459e74bdec2aaf0a4398cec8cb8?Expires=1701043200&Signature=flZw08g53UEh-BuErGPVRyavCv-LNaVNCr4ujV2y84~fvFECDBHFfnxIQ97wV~WkXNjRahkF~kX7nek2BckIhOrmWedZ-LoTTPQeBjG2POXIkr4c5Ppls2rA2mHNdflaIsagltc1lt98jDbPXhKmuR3Qewts0Rzq~eabFUsIFMM5F5MCA5VlaWIBbcJnrnlQDBxQHLcNvcqM0IEgVXkvOMg5H0Rdn3zlbfxLchX7YUWX6vsQUANzF6HiPnAWtp1mk5J9653aVHd-sCb9ix4tb-q1uY8t1J~6iOiHw7TnQzlA0T32iQnKk6~DG-G2kA0uakk3Vm4~iqCJxaoecCBK3g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.toplocation-container {
+  background-color: #f3f3f3;
+}
+.toplocation-check {
+  background: #8338ec;
+  color: #ffbe0b;
+  font-family: Inter;
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.toplocation-description {
+  color: var(--comentarii-text, #2f2f2f);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 85ch;
+}
+.toplocation-header {
+  color: var(--Artist, #232323);
+  font-family: "Inter";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.location-button {
+  width: 6.77419rem;
+  height: 1.75rem;
+  border: 1px solid var(--Link);
+}
+.toplocation-tag {
+  color: #969696;
+  font-family: Inter;
+  font-size: 0.77156rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.toplocation-container {
+  border-radius: 20px;
+}
+.skeleton-loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeletonLoading 1.5s infinite;
+  border-radius: 2rem;
+}
+.latest-added-wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.latest-added-carousel > a {
+  flex: 0 0 14.28%;
+}
+.latest-added-carousel {
+  display: flex;
+  overflow: hidden;
+}
+.fadeOut {
+  animation: fadeOutAnimation 0.3s linear forwards;
+}
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes skeletonLoading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+@media all and (max-width: 1120px) {
+  .promoting-banner {
+    margin: 0;
+    border-radius: 0;
+    height: 14.135rem;
+    width: 100%;
+  }
+  .mobile-logo {
+    background: #faedcd;
+    padding-left: 0.85rem;
+    padding-right: 0.65rem;
+    padding-top: 0.39rem;
+    padding-bottom: 0.39rem;
+    border-radius: 0rem 1.875rem 1.875rem 0rem;
+  }
+  .topfive-wrapper {
+    background: #f3f3f3;
+    box-shadow: 0 0 10px #00000040;
+  }
+  .toplocation-description {
+    font-size: 0.625rem;
+  }
+  .toplocation-header {
+    font-size: 1.35613rem;
+  }
+  .toplocation-tag {
+    font-size: 0.47156rem;
+  }
+  .toplocation-check {
+    font-size: 0.29881rem;
+  }
+  .toplocation-details > svg {
+    width: 3.36956rem;
+    height: 3.36619rem;
+  }
+
+  .toplocation-banner {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .step-vector {
+    width: 75px;
+    height: 75px;
+  }
+  .step-logo-vector > svg {
+    width: 20px;
+    height: 20px;
+  }
+}

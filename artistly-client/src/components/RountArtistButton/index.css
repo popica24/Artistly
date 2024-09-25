@@ -1,0 +1,67 @@
+.rounded-client-button:hover > .rounded-client-image-wrapper {
+  animation: zoomProfilePictureHover 0.3s forwards;
+}
+.rounded-client-button:hover > .rounded-client-name {
+  animation: addBorderPurpleHover 0.3s forwards;
+}
+.rounded-client-name {
+  border-bottom: 1px solid transparent;
+}
+
+.rounded-client-image-wrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+.rounded-client-name {
+  color: var(--Artist, #232323);
+  font-family: Inter, sans-serif;
+  font-size: 0.80913rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 2px solid #fff;
+}
+.rounded-client-tag {
+  color: #969696;
+  font-family: Inter;
+  font-size: 0.70506rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.latest-added-svg {
+  width: 137px;
+  height: 24px;
+}
+@keyframes addBorderPurpleHover {
+  0% {
+    border-bottom: 2px solid transparent;
+  }
+  100% {
+    border-bottom: 2px solid #510087;
+  }
+}
+@keyframes zoomProfilePictureHover {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+@media (max-width: 1024px) {
+  .rounded-client-image-wrapper {
+    width: 3rem;
+    height: 3rem;
+  }
+  .rounded-client-tag {
+    font-size: 0.50506rem;
+  }
+  .rounded-client-name {
+    font-size: 0.60913rem;
+  }
+}

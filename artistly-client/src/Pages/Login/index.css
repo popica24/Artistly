@@ -1,0 +1,101 @@
+.bg-login {
+  background-image: url("https://i.imgur.com/mNwbNoj.jpg");
+}
+.bg-register {
+  background-image: url("https://i.imgur.com/HV4EfSb.jpg");
+}
+.login-banner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.back-btn {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.90088rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.9375rem;
+  background: #d9d9d9;
+  width: 6.0625rem;
+  height: 1.9375rem;
+  flex-shrink: 0;
+}
+
+.login-switch-button-left-toggled {
+  color: white;
+  width: 8.5625rem;
+  height: 2.375rem;
+  border-radius: 1.875rem 0rem 0rem 1.875rem;
+  border: 1px solid var(--Link, #354f52);
+  background: var(--Link, #354f52);
+}
+.login-switch-button-left-untoggled {
+  color: black;
+  width: 8.5625rem;
+  height: 2.375rem;
+  border-radius: 1.875rem 0rem 0rem 1.875rem;
+  border: 1px solid var(--Link, #354f52);
+  background: white;
+}
+.login-switch-button-right-toggled {
+  color: white;
+  width: 8.5625rem;
+  height: 2.375rem;
+  flex-shrink: 0;
+  border-radius: 0rem 1.875rem 1.875rem 0rem;
+  border: 1px solid var(--Link, #0354f52c);
+  background: var(--Link, #354f52);
+}
+.login-switch-button-right-untoggled {
+  color: #000000;
+  width: 8.5625rem;
+  height: 2.375rem;
+  flex-shrink: 0;
+  border-radius: 0rem 1.875rem 1.875rem 0rem;
+  border: 1px solid var(--Link, #354f52);
+  background: white;
+}
+.register-form {
+  max-width: 20rem;
+}
+.form-input {
+  border-radius: 0.625rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.17);
+  height: 2rem;
+  max-width: 20rem;
+  padding-left: 0.5rem;
+}
+.login-btn {
+  border-radius: 0.625rem;
+  border: 2px solid var(--Link, #07c);
+  height: 2.5625rem;
+  width: 100%;
+  max-width: 20rem;
+}
+li.invalid,
+li.valid {
+  display: flex !important;
+  align-items: center !important;
+}
+li.valid > img,
+li.invalid > img {
+  margin-right: 8px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5 ease-in forwards linear;
+}
